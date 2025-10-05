@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Mironidis Alexandros - UI/UX Designer - Frontend Developer Resume
+    </title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, sans-serif;
+        background: #f7f9fc;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      }
+
+      h1 {
+        font-size: 24px;
+        margin-bottom: 5px;
+      }
+
+      h2 {
+        font-size: 18px;
+        margin-top: 20px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 2px;
+        margin-bottom: 5px;
+      }
+
+      .contact span {
+        display: block;
+        margin-bottom: 1px;
+        font-size: 12px;
+      }
+
+      a {
+        color: #007acc;
+        text-decoration: none;
+      }
+
+      .section {
+        margin-top: 15px;
+      }
+
+      .job {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 10px;
+      }
+
+      .job-title {
+        font-weight: bold;
+        font-size: 14px;
+      }
+
+      .job-date {
+        font-style: italic;
+        font-size: 12px;
+        color: #555;
+      }
+
+      ul {
+        margin-top: 6px;
+        padding-left: 15px;
+      }
+
+      ul li {
+        margin-bottom: 4px;
+        font-size: 12px;
+      }
+
+      p {
+        font-size: 12px;
+        line-height: 1.4;
+        margin-top: 0px;
+      }
+
+      .small {
+        font-size: 12px;
+        color: #555;
+      }
+
+      hr {
+        border: none;
+        border-top: 1px solid #ddd;
+        margin: 20px 0;
+      }
+
+      /* PDF Button */
+      #download-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 8px 16px;
+        font-size: 12px;
+        font-weight: 500;
+        color: #007dd1;
+        background: rgba(255, 255, 255, 0.15);
+        border: 1px solid rgba(0, 122, 204, 0.25);
+        border-radius: 12px;
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        cursor: pointer;
+        z-index: 999;
+        transition: all 0.25s ease;
+      }
+
+      #download-btn:hover {
+        background: rgba(0, 122, 204, 0.15);
+        color: #005fa3;
+        border-color: rgba(0, 122, 204, 0.35);
+      }
+
+      @media print {
+        #download-btn {
+          display: none !important;
+        }
+
+        body {
+          background: white !important;
+          padding: 0;
+        }
+
+        .container {
+          box-shadow: none;
+          border-radius: 0;
+          padding: 0;
+        }
+
+        a::after {
+          content: " (" attr(href) ")";
+          font-size: 10px;
+          color: #666;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Mironidis Alexandros</h1>
+      <div class="contact small">
+        <span>UI/UX Designer - Frontend Developer</span>
+        <span>
+          <a
+            href="https://www.linkedin.com/in/alexandros-mironidis/"
+            target="_blank"
+            >LinkedIn</a
+          >
+          •
+          <a href="https://github.com/alxmrd/" target="_blank">GitHub</a>
+        </span>
+        <span><a href="tel:+306987326516">+30 6987 326 516</a></span>
+        <span
+          ><a href="mailto:mironidis1@gmail.com">mironidis1@gmail.com</a></span
+        >
+        <span>Netherlands, Amsterdam, Slingerbeekstraat, 1078 BJ </span>
+      </div>
+
+      <!-- <div class="section">
+        <h2>Who Am I?</h2>
+        <p>
+          Creative and results-driven Frontend Developer with 5 years of
+          experience building scalable, maintainable, and interactive web
+          applications. Skilled in VueJS, StencilJS, TypeScript, and modern
+          development practices.
+        </p>
+        <p>
+          Proven track record of delivering high-impact features under pressure
+          in Agile teams, with deployments in global healthcare and gaming
+          markets.
+        </p>
+      </div> -->
+
+      <div class="section">
+        <h2>Who Am I?</h2>
+        <p>
+          Creative and detail-driven UI/UX Designer & Frontend Developer with 5+
+          years of experience crafting engaging, user-centered digital products.
+          Combines a strong technical foundation in VueJS, TypeScript, and
+          component-based systems with a solid design background focused on
+          usability, accessibility, and visual consistency.
+        </p>
+        <p>
+          Experienced in end-to-end delivery — from research and wireframing to
+          interactive prototyping and production implementation.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Professional Experience</h2>
+
+        <div class="job">
+          <span class="job-title">UI/UX & Graphic Designer | Freelancer</span>
+          <span class="job-date">Jan 2021 – Present</span>
+        </div>
+        <p>
+          <strong>Scope:</strong> Logos, Branding, UI/UX design, prototyping,
+          web design
+        </p>
+        <ul>
+          <li>
+            Designed and developed brand identities, logos, and marketing
+            collateral for diverse clients.
+          </li>
+          <li>
+            Created responsive website layouts and mobile-first prototypes using
+            Figma and Adobe Creative Suite.
+          </li>
+          <li>
+            Delivered design systems and style guides to ensure visual and
+            functional consistency.
+          </li>
+          <li>
+            Designed user flows and high-fidelity mockups focused on intuitive
+            navigation and storytelling.
+          </li>
+        </ul>
+
+        <div class="job">
+          <span class="job-title">Frontend Developer | Kaizen Gaming</span>
+          <span class="job-date">July 2024 – Present</span>
+        </div>
+        <p><strong>Tech Stack:</strong> VueJS, Tailwind, Pinia, Unit Testing</p>
+        <ul>
+          <li>
+            Developed a social-media-inspired product to enhance interaction
+            between users and players of Stoiximan and Betano.
+          </li>
+          <li>
+            Collaborated with designers to translate wireframes into
+            interactive, user-friendly interfaces
+          </li>
+          <li>
+            Implemented accessibility and responsive design best practices
+          </li>
+          <li>
+            Successfully launched MVP under intense time constraints, across
+            global deployments (Peru, Bulgaria)
+          </li>
+          <li>
+            Maintained clean component structure and testing coverage to support
+            scalable UX development
+          </li>
+          <!-- <li>
+            Developed a social-media-inspired product to enhance interaction
+            between users and players of Stoiximan and Betano.
+          </li>
+          <li>Successfully launched MVP under intense time constraints.</li>
+          <li>Expanded deployment to Peru and Bulgaria.</li>
+          <li>Delivered UX/UI features aligned with user data and KPIs.</li>
+          <li>
+            Maintained codebase quality with unit testing and modern state
+            management.
+          </li> -->
+        </ul>
+
+        <div class="job">
+          <span class="job-title"
+            >Frontend Engineer – Manager | Pfizer Digital</span
+          >
+          <span class="job-date">Mar 2023 – Jun 2024</span>
+        </div>
+        <p>
+          <strong>Tech Stack:</strong> JavaScript, VueJS, StencilJS, Storybook
+        </p>
+        <ul>
+          <li>
+            Led the Pods pilot initiative, shaping digital healthcare
+            experiences with a strong design-system focus.
+          </li>
+          <li>
+            Drove collaboration between product designers and developers to
+            maintain UI consistency across apps.
+          </li>
+          <li>
+            Advocated for UX improvements based on design tokens, accessibility,
+            and usability testing feedback.
+          </li>
+          <li>
+            Drove alignment between developers, designers, and stakeholders.
+          </li>
+          <!-- <li>
+            Led development of the Pods pilot initiative focused on healthcare
+            transformation.
+          </li>
+          <li>
+            Introduced scalable frontend architecture and integrated design
+            systems.
+          </li>
+          <li>
+            Drove alignment between developers, designers, and stakeholders.
+          </li> -->
+        </ul>
+
+        <div class="job">
+          <span class="job-title"
+            >Frontend Engineer – Senior Associate | Pfizer Digital</span
+          >
+          <span class="job-date">Apr 2022 – Feb 2023</span>
+        </div>
+        <p>
+          <strong>Tech Stack:</strong> TypeScript, StencilJS, Jest, Storybook,
+          ElasticSearch
+        </p>
+        <ul>
+          <li>
+            Designed and implemented reusable UI components for the PfizerPro
+            webinar platform (70+ global markets)
+          </li>
+          <li>
+            Collaborated with UX teams to improve interaction patterns and
+            accessibility
+          </li>
+          <li>
+            Enhanced developer–designer workflows through documentation and
+            Storybook previews
+          </li>
+          <li>Improved delivery speed using Agile methods and CI/CD.</li>
+          <!-- <li>
+            Developed PfizerPro webinar platform serving 70+ global markets.
+          </li>
+          <li>Built reusable and accessible UI components.</li>
+          <li>Maintained high unit test coverage with Jest and Storybook.</li>
+          <li>Improved delivery speed using Agile methods and CI/CD.</li> -->
+        </ul>
+
+        <div class="job">
+          <span class="job-title"
+            >Frontend Engineer – Associate | Pfizer Digital</span
+          >
+          <span class="job-date">Jun 2020 – Mar 2022</span>
+        </div>
+        <p>
+          <strong>Tech Stack:</strong> TypeScript, StencilJS, Jest, Storybook,
+          ElasticSearch
+        </p>
+        <ul>
+          <li>
+            Built and refactored core UI modules to support Pfizer’s global
+            platforms
+          </li>
+          <li>
+            Integrated Adobe Analytics to monitor user behavior and optimize UX
+          </li>
+          <li>
+            Supported component-library expansion with focus on accessibility
+            and design alignment
+          </li>
+
+          ⸻
+
+          <!-- <li>
+            Built performant frontend modules with a modular architecture.
+          </li>
+          <li>Integrated Adobe Analytics for behavior tracking.</li>
+          <li>Refactored legacy code and maintained documentation.</li> -->
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Diploma Thesis</h2>
+        <p>
+          <strong>Project:</strong> Information management system for EKAB
+          (National Emergency Help Center), including a web portal and
+          cross-platform mobile apps.
+        </p>
+        <ul>
+          <li>Incident reporting, volunteer & defibrillator management</li>
+          <li>Real-time notifications and cardiac arrest navigation</li>
+          <li>Secure backend API with JWT authentication</li>
+        </ul>
+        <p><strong>Stack:</strong> React, React Native, Redux, JWT, PHP</p>
+        <p>
+          <strong>Title:</strong> Management System of Defibrillators in
+          Emergency Incidents
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Education & Certifications</h2>
+        <ul>
+          <li>
+            Electrical & Computer Engineering, University of Western Macedonia
+          </li>
+
+          <li>C2 Proficiency in English, Michigan State University</li>
+        </ul>
+      </div>
+    </div>
+
+    <button id="download-btn" onclick="generatePDF()" title="Download PDF">
+      Download PDF
+    </button>
+    <script>
+      function generatePDF() {
+        const element = document.querySelector(".container");
+        html2pdf()
+          .set({
+            margin: [0, 0, 0, 0],
+            filename: "Mironidis_Alexandros_CV.pdf",
+            image: { type: "jpeg", quality: 0.98 },
+            html2canvas: { scale: 2, scrollY: 0 },
+            jsPDF: { unit: "in", format: "a4", orientation: "portrait" },
+          })
+          .from(element)
+          .toPdf()
+          .get("pdf")
+          .then((pdf) => {
+            pdf.setPage(1);
+            pdf.setFontSize(10);
+          })
+          .save();
+      }
+    </script>
+  </body>
+</html>
