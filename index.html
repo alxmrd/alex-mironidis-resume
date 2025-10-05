@@ -377,6 +377,11 @@
           })
           .save();
       }
+
+      window.addEventListener("load", () => {
+        // Add a tiny delay so the page can render first
+        setTimeout(generatePDF, 1000);
+      });
     </script>
   </body>
 </html>
