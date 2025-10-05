@@ -380,6 +380,7 @@
 
       window.addEventListener("load", () => {
         if (window.location.hash === "#download") {
+          console.log("Generating PDF...");
           setTimeout(() => {
             generatePDF();
             history.replaceState(null, null, " ");
@@ -389,6 +390,8 @@
 
         const urlParams = new URLSearchParams(window.location.search);
         if (urlParams.get("download") === "true") {
+          console.log("Generating PDF download...");
+
           setTimeout(() => {
             generatePDF();
           }, 1000);
