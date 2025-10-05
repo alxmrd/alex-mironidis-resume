@@ -1,1 +1,1 @@
-# alex-mironidis-resume.github.io
+# alex-mironidis-resume
