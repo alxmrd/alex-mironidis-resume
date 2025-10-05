@@ -378,9 +378,14 @@
           .save();
       }
 
-      window.addEventListener("load", () => {
-        // Add a tiny delay so the page can render first
-        setTimeout(generatePDF, 1000);
+      window.addEventListener("DOMContentLoaded", () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get("download") === "true") {
+          // Small delay to ensure page is fully rendered
+          setTimeout(() => {
+            generatePDF();
+          }, 500);
+        }
       });
     </script>
   </body>
