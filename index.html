@@ -378,19 +378,20 @@
           .save();
       }
 
-      window.addEventListener("DOMContentLoaded", () => {
-        // Check both location.search and the full href for the parameter
-        const urlParams = new URLSearchParams(window.location.search);
-        const fullUrl = window.location.href;
-
-        if (
-          urlParams.get("download") === "true" ||
-          fullUrl.includes("?download=true") ||
-          fullUrl.includes("/?download=true")
-        ) {
+      window.addEventListener("load", () => {
+        if (window.location.hash === "#download") {
           setTimeout(() => {
             generatePDF();
-          }, 500);
+            history.replaceState(null, null, " ");
+          }, 1000);
+          return;
+        }
+
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get("download") === "true") {
+          setTimeout(() => {
+            generatePDF();
+          }, 1000);
         }
       });
     </script>
